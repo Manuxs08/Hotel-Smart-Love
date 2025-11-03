@@ -1,0 +1,87 @@
+.main{
+}
+
+.form{
+    border-style: solid;
+    border-color: red;
+    border-width: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.form-pages{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    align-items: center;
+    justify-items: left;
+    justify-content: center;
+    
+    column-gap: 50px;
+    row-gap: 20px;
+    margin-bottom: 40px;
+}
+
+.form-section{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 700px;
+    grid-template-columns: auto auto;
+    column-gap: 50px;
+    row-gap: 20px;
+    .rooms-container, .nota-adicional, h1{
+        grid-column: 1/3;
+    }
+}
+.form-input-section{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+}
+.rooms-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    height: 300px;
+    overflow-y: scroll;
+}
+.room-info{
+    margin-bottom: 25px;
+    border: solid black 2px;
+    padding: 20px;
+}
+.room-selected{
+    border-color: green;
+    border-width: 5px;
+}
+
+.form-page-section{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 10px;
+    grid-template-columns: auto auto;
+}
+.resumen-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+button{
+    margin-left: 20px;
+    margin-right: 20px;
+}
