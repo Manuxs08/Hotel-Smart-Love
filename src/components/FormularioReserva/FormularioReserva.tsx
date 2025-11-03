@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import './FormularioReserva.css'
 import { useNavigate } from 'react-router-dom'
+import rooms from '../../Rooms.json'
 
 const FormularioReserva = () => {
     const navigate = useNavigate()
@@ -17,16 +18,6 @@ const FormularioReserva = () => {
         aditionalNotes: ""
 
     }
-
-    const rooms = [
-        {id: 0, name: "Doble 201", roomType: "Doble", maxCapacity: 2, price: 20.00, description: "Cama queen, balcon con vista urbana", available: true},
-        {id: 1, name: "Doble 202", roomType: "Doble", maxCapacity: 2, price: 20.00, description: "Cama queen, balcon con vista urbana", available: true},
-        {id: 2, name: "Doble 203", roomType: "Doble", maxCapacity: 2, price: 20.00, description: "Cama queen, balcon con vista urbana", available: true},
-        {id: 3, name: "Doble 204", roomType: "Doble", maxCapacity: 2, price: 20.00, description: "Cama queen, balcon con vista urbana", available: true},
-        {id: 4, name: "Doble 205", roomType: "Doble", maxCapacity: 2, price: 20.00, description: "Cama queen, balcon con vista urbana", available: true},
-        {id: 5, name: "Doble 206", roomType: "Doble", maxCapacity: 2, price: 20.00, description: "Cama queen, balcon con vista urbana", available: true},
-        {id: 6, name: "Doble 207", roomType: "Doble", maxCapacity: 2, price: 20.00, description: "Cama queen, balcon con vista urbana", available: true},
-    ]
 
     const errorRef = useRef<HTMLDivElement>(null)
     const [formData, setFormData] = useState(initialValues)
@@ -218,7 +209,7 @@ const FormularioReserva = () => {
                         <div className='rooms-container'>
                             {
                                     rooms.map(element => {
-                                        if(element.available){
+                                        if(element.available && element.roomType == formData.roomType){
                                             return(
                                                 <div id={String(element.id)} className='room-info' onClick={()=>selectRoom(element.id)}>
                                                     <div>{element.name}</div>

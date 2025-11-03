@@ -1,0 +1,80 @@
+[
+    {
+        "id": 0,
+        "name": "Doble 201",
+        "roomType": "Doble",
+        "maxCapacity": 2,
+        "price": 20.00,
+        "description": "Cama queen, balcon con vista urbana",
+        "available": true
+    },
+    {
+        "id": 1,
+        "name": "Doble 202",
+        "roomType": "Doble",
+        "maxCapacity": 2,
+        "price": 20.00,
+        "description": "Cama queen, balcon con vista urbana",
+        "available": true
+    },
+    {
+        "id": 2,
+        "name": "Doble 203",
+        "roomType": "Doble",
+        "maxCapacity": 2,
+        "price": 20.00,
+        "description": "Cama queen, balcon con vista urbana",
+        "available": false
+    },
+    {
+        "id": 3, "name": "Simple 204",
+        "roomType": "Simple",
+        "maxCapacity": 1,
+        "price": 20.00,
+        "description": "Cama queen, balcon con vista urbana",
+        "available": true
+    },
+    {
+        "id": 4, "name": "Simple 205",
+        "roomType": "Simple",
+        "maxCapacity": 1,
+        "price": 20.00,
+        "description": "Cama queen, balcon con vista urbana",
+        "available": true
+    },
+    {
+        "id": 5, "name": "Simple 206",
+        "roomType": "Simple",
+        "maxCapacity": 1,
+        "price": 20.00,
+        "description": "Cama queen, balcon con vista urbana",
+        "available": false
+    },
+    {
+        "id": 6,
+        "name": "Familiar 207",
+        "roomType": "Familiar",
+        "maxCapacity": 4,
+        "price": 20.00,
+        "description": "Cama queen, balcon con vista urbana",
+        "available": true
+    },
+    {
+        "id": 7,
+        "name": "Familiar 207",
+        "roomType": "Familiar",
+        "maxCapacity": 4,
+        "price": 20.00,
+        "description": "Cama queen, balcon con vista urbana",
+        "available": true
+    },
+    {
+        "id": 8,
+        "name": "Familiar 207",
+        "roomType": "Familiar",
+        "maxCapacity": 4,
+        "price": 20.00,
+        "description": "Cama queen, balcon con vista urbana",
+        "available": false
+    }
+]
