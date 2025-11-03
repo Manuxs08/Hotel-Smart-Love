@@ -1,4 +1,3 @@
-import React from 'react'
 import './PanelAdministrador.css'
 import rooms from '../../Rooms.json'
 import reservations from '../../Reservations.json'
